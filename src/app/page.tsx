@@ -1,6 +1,7 @@
-export default function Home() {
-  console.log("Hello, world!");
+export default function HomePage() {
   return (
-    <div className="text-green-500">Hello world</div>
+    <div>
+      <div>HomePage</div>
+    </div>
   );
 }
