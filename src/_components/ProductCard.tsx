@@ -8,7 +8,6 @@ type ProductCardProps = {
 };
 
 const ProductCard: FC<ProductCardProps> = ({ product }) => {
-  console.log(product); 
   return (
     <li>
       <Link href={`/shop/${product.id}`} className="flex flex-col pb-4">
