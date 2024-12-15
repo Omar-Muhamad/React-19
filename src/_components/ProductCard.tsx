@@ -8,9 +8,10 @@ type ProductCardProps = {
 };
 
 const ProductCard: FC<ProductCardProps> = ({ product }) => {
+  console.log(product); 
   return (
     <li>
-      <Link href={`/shop/${product.title}`} className="flex flex-col pb-4">
+      <Link href={`/shop/${product.id}`} className="flex flex-col pb-4">
         <div className="h-80 w-full py-8 px-4 bg-lightGray flex items-center justify-center">
           <img
             src={product.image}
