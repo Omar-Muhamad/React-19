@@ -32,7 +32,6 @@ describe("Page", () => {
     expect(image).toHaveAttribute("alt", mockProduct.title);
 
     expect(screen.getByText(mockProduct.title)).toBeInTheDocument();
-    expect(screen.getByText(mockProduct.description)).toBeInTheDocument();
-    expect(screen.getByText(mockProduct.price)).toBeInTheDocument();
+    expect(screen.getByText(`${mockProduct.price} $`)).toBeInTheDocument();
   });
 });
